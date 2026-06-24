@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Form</title>
+    <link rel="stylesheet" href="2.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Student Form</h1>
+
+    <form>
+
+        <div class="row">
+            <label for="name">Name :</label>
+            <input type="text" id="name" required>
+        </div>
+
+        <div class="row">
+            <label for="email">Email :</label>
+            <input type="email" id="email" required>
+        </div>
+
+        <div class="row">
+            <label for="phone">Phone :</label>
+            <input type="tel" id="phone" pattern="[0-9]{10}" required>
+        </div>
+
+        <div class="row">
+            <label>Gender :</label>
+            <div class="gender">
+                <input type="radio" id="male" name="gender">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender">
+                <label for="female">Female</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <label for="dob">Date of Birth :</label>
+            <input type="date" id="dob" required>
+        </div>
+
+        <div class="row">
+            <label for="password">Password :</label>
+            <input type="password" id="password" required>
+        </div>
+
+        <div class="row">
+            <label for="country">Country :</label>
+            <select id="country">
+                <option>India</option>
+                <option>USA</option>
+                <option>Canada</option>
+                <option>UK</option>
+                <option>Australia</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <label for="education">Education :</label>
+            <input type="text" id="education">
+        </div>
+
+        <div class="row">
+            <label for="cgpa">CGPA :</label>
+            <input type="number" id="cgpa" step="0.01">
+        </div>
+
+        <div class="row">
+            <label for="file">Resume :</label>
+            <input type="file" id="file">
+        </div>
+
+        <div class="row">
+            <label for="address">Address :</label>
+            <textarea id="address"></textarea>
+        </div>
+
+        <div class="check">
+            <input type="checkbox" id="agree">
+            <label for="agree">I agree to the terms and conditions.</label>
+        </div>
+
+        <div class="buttons">
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
